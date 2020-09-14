@@ -3,6 +3,7 @@ import time
 
 print("This tools is fully legal , just a simple expression for brute force attacks , tools work !")
 time.sleep(5)
+say = 1
 while True:
     user_pass = input("Enter your password : ")
 
@@ -18,6 +19,8 @@ while True:
         for letter in range(len(user_pass)):
             guess_letter = password[randint(0, 25)]
             guess = str(guess_letter) + str(guess)
-        print(guess)
+            say += 1
+        print("Deneme : {}".format(say))
+        print("Şifre : ",guess)
         
     print("Your password is",guess)
